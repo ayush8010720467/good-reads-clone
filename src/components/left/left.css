@@ -1,0 +1,6 @@
+.goodreads-wrap .gr-img img {
+    max-width: 150px;
+}
+.goodreads-wrap .gr-img {
+    flex: 0 0 18%;
+}
