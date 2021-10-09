@@ -1,0 +1,57 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grey-text {
+    color: #999999;
+}
+
+.fl-right {
+    float: right;
+}
+
+.body-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.goodreads-wrap {
+    display: flex;
+}
+
+
+
+
+
+.goodreads-wrap .gr-desc {
+    flex: 0 0 45%;
+}
+
+.goodreads-wrap .gr-genres {
+    flex: 0 0 37%;
+}
+
+.goodreads-wrap .gr-genres li a {
+    color: #00635d;
+}
