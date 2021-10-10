@@ -1,14 +1,25 @@
+import { constants } from "../../constants";
+import Genere from "../genere";
+import Image from "../image";
+import {useEffect, useState} from 'react';
 function Right(props){
+    const getGenere = ()=>{
+        if(props.genre){
+            return  props.genre.map((elem, i)=>{
+                return <li key={i}><Genere gnere={elem} userNumber={i}></Genere></li>
+            })
+        } else{
+            return <Image src={constants.loader} ></Image>
+        }
+        
+    }
+    // const [generes, updategeneres] = useState(props.genere)
  return (<div className="gr-genres">
  <ul>
      <li>
          <span>GENRES</span>
      </li>
-     <li><a href="#">History</a><span className="fl-right">12 users</span></li>
-     <li><a href="#">NonFiction</a><span className="fl-right">8 users</span></li>
-     <li><a href="#">War</a><span className="fl-right">12 users</span></li>
-     <li><a href="#">War {'>'} World War II</a><span className="fl-right">7 users</span></li>
-     <li><a href="#">War {'>'} Military Fiction </a><span className="fl-right">11 users</span></li>
+     {getGenere()}
  </ul>
 </div>);
 }
