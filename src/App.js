@@ -1,19 +1,10 @@
-import './App.css';
-import Left from './components/left/left';
-import Mid from './components/mid/mid';
-import Right from './components/right/right';
+
+import Home from './components/Home'
+import Detail from './components/Detail';
 function App() {
-  return (
-    <>
-    <div className="body-wrap">
-        <div className="goodreads-wrap">
-            <Left></Left>
-            <Mid></Mid>
-            <Right></Right>
-        </div>
-    </div>
-    </>
-  );
+  return(<>
+  <Detail></Detail>
+  </>)
 }
 
 export default App;

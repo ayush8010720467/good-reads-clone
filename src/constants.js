@@ -8,7 +8,10 @@ const constants = {
     Hotel. From the fall of Paris in 1940 to the race for Paris in 1944, this riveting, page-turning drama unfolds through their decisions--for better and worse. Taking Paris is history told at a breathtaking pace, a sprawling yet
     intimate saga of heroism, desire, and personal sacrifice for all that is right.`,
      pageHeading : `Taking Paris: The Epic Battle for the City of Lights`,
+  
+     loader:'Loading',
      contributor:['saurabh','abhishek','vivek']
+
 
 }
  

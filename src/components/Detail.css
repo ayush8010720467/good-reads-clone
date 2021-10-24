@@ -38,7 +38,6 @@ li {
 
 .goodreads-wrap {
     display: flex;
-    list-style: none;
 }
 
 
@@ -53,6 +52,6 @@ li {
     flex: 0 0 37%;
 }
 
-.goodreads-wrap .gr-genres li a {
+.goodreads-wrap .gr-genres li .genere {
     color: #00635d;
 }
