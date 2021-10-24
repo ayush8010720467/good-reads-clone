@@ -1,4 +1,5 @@
 function Image(props){
+    
     return (<div className="gr-img">
     <img src={props.src}
         alt={props.alt} />
