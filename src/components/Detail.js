@@ -1,4 +1,5 @@
 import './Detail.css'
+import axios from 'axios';
 import {useEffect, useState} from 'react'
 import Left from '../components/left/left';
 import Mid from '../components/mid/mid';
@@ -6,20 +7,19 @@ import Right from '../components/right/right';
 import { constants } from '../constants';
 import {base_url} from '../env'
 import { useParams } from 'react-router';
-import Navbar from './Navbar';
 function Detail() {
   let {isbn}=useParams();
 
   let url = base_url + `/dev/book/details?slug=${isbn}`
   const [data,updateData] = useState({})
   useEffect(()=>{
-    fetch(url).then(res=>res.json()).then((d)=>{updateData(d)}).catch(e=>console.log(e))
+    // fetch(url).then(res=>res.json()).then((d)=>{updateData(d)}).catch(e=>console.log(e))
+    axios.get(url).then((d)=>{updateData(d.data)}).catch(e=>console.log(e))
   },[url]);
   
   
     return (
     <>
-    <Navbar/>
     <div className="body-wrap">
         <div className="goodreads-wrap">
             <Left source={data.coverImage||constants.loader}></Left>
