@@ -2,7 +2,7 @@ import './left.css'
 import Image from '../image'
 function Left(props){
    
-    return (<Image src={props.source} alt='Book' title='World War'/>);
+    return (<Image src={props.source} alt='Book' title='World War' isbn={props.isbn}/>);
 }
 export default Left;
             
