@@ -6,7 +6,6 @@ import Right from '../components/right/right';
 import { constants } from '../constants';
 import {base_url} from '../env'
 import { useParams } from 'react-router';
-import Navbar from './Navbar';
 function Detail() {
   let {isbn}=useParams();
 
@@ -19,7 +18,6 @@ function Detail() {
   
     return (
     <>
-    <Navbar/>
     <div className="body-wrap">
         <div className="goodreads-wrap">
             <Left source={data.coverImage||constants.loader}></Left>

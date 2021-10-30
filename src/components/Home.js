@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react'
 import {useEffect, useState} from 'react'
 import Left from '../components/left/left';
@@ -5,8 +6,6 @@ import Mid from '../components/mid/mid';
 import Right from '../components/right/right';
 import { constants } from '../constants';
 import {base_url} from '../env';
-import Navbar from './Navbar';
-
 
 function Home() {
     let url = base_url + '/dev/books'
@@ -15,7 +14,8 @@ function Home() {
     useEffect(()=>{
       
           
-        fetch(url).then(res=>res.json()).then((d)=>setData(d)).catch(e=>console.log('Error'))
+        // fetch(url).then(res=>res.json()).then((d)=>setData(d)).catch(e=>console.log('Error'))
+        axios.get(url).then((d)=>setData(d.data)).catch(e=>console.log('Error'))
         // setIsloaded(!isloaded)
       
       
@@ -23,7 +23,7 @@ function Home() {
     
       return (
       <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="body-wrap">
           <div className="goodreads-wrap">
             <ul>

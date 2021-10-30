@@ -7,7 +7,6 @@ function Navbar() {
       <div className='nav'>
           <div className='logo-home'>
           <span onClick={()=>{window.location.assign('/')}}>Logo</span>
-          <span onClick={()=>{window.location.assign('/')}}>Home</span>
           </div>
           <div className='register'>
           <span onClick={()=>{window.location.assign('/register')}}>SignUp</span>
