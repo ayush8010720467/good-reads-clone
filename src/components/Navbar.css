@@ -1,0 +1,28 @@
+.nav{
+    box-sizing: border-box;
+    width: 85vw;
+    height: 50px;
+    background-color: rgb(3 121 233 / 57%);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+
+}
+.logo-home{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+.logo-home>span{
+    cursor: pointer;
+}
+.register{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.register>span{
+    cursor: pointer;
+}

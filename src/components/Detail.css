@@ -14,13 +14,14 @@ a {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px
 }
 
 li {
-    border-bottom: 1px solid grey;
+    display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
+    justify-content: space-around;
 }
 
 .grey-text {
@@ -34,12 +35,15 @@ li {
 .body-wrap {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: antiquewhite;
 }
 
 .goodreads-wrap {
     display: flex;
 }
-
+.content-list{
+    border-bottom: 1px solid grey ;
+}
 
 
 

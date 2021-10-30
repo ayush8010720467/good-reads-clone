@@ -1,0 +1,56 @@
+.login-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.sm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 40vw;
+    
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-txt{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    
+}
+.input{
+    width: 500px;
+    border-radius: 6px;
+    height: 25px;
+}
+.btn-smt{
+    
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+
+}

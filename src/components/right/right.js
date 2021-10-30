@@ -1,7 +1,7 @@
 import { constants } from "../../constants";
 import Genere from "../genere";
 import Image from "../image";
-import {useEffect, useState} from 'react';
+import './right.css'
 function Right(props){
     const getGenere = ()=>{
         if(props.genre){
